@@ -1,0 +1,171 @@
+body,html{
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+	font-family: 'Kanit',sans-serif;
+}
+.row1{
+	background-color:antiquewhite;
+}
+
+.btn1{
+	font-family: 'Kanit',sans-serif;
+	position: relative;
+	z-index: 3;
+	opacity: 0;
+	color:black;
+	transform: translateY(30px);
+	transform: 0.5s all;
+}
+.card:hover .btn1{
+	opacity: 1;
+	transform: translateY(0px);
+	cursor: pointer;
+
+}
+.btn-success{
+	background-color: #c0aa83;
+	border-color: #c0aa83;
+	color: #fff;
+}
+
+.btn-success:hover{
+	background-color: #242424;
+	border-color: #242424;
+	color: #fff;
+	cursor: pointer;
+}
+.but{
+	font-family: 'Kanit',sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+	cursor: pointer;
+
+}
+.navbar1{
+	background-color:#dbc8a7;
+}
+.navbar-nav1{
+	/* position: relative; */
+	justify-content: center;
+	align-items: center;
+	/* left:143px; */
+}
+/* .carousel-item img{
+	width:1200px;
+	height: 400px;;
+} */
+.card:hover{
+	box-shadow: 20px 40px 80px -44px black;
+	transition: 0.3s ease-in-out;
+	cursor: pointer;
+}
+
+.navbar-brand img{
+	position: relative;
+    width: 27px;
+    height: 24px;
+    margin-right: 2px;
+    top: -2px;
+}
+
+.btn-light{
+	background-color: #c0aa83;
+	border-color: #c0aa83;
+	color: #fff;
+	font-family: 'Kanit',sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.btn-light:hover{
+	background-color: #fff;
+	border-color: #c0aa83;
+	color: #c0aa83;
+	font-family: 'Kanit',sans-serif;
+	font-size: 16px;
+	font-weight: 900;
+
+}
+/* .row1{
+	display: grid;
+	
+}
+.col2{
+	grid-column: 2/1;
+} */
+.sticky-sidebar{
+	background-color:#fbe7c3 ; 
+	/* grid-row: 1/4; */
+}
+.accordion-body a{
+	text-decoration: none;
+	color:black;
+	/* font-family: 'Kanit',sans-serif; */
+
+}
+.accordion-header {
+	/* text-decoration: none; */
+	color:black;
+	font-family: 'Kanit',sans-serif;
+
+}
+.tags{
+	color: #242424;
+	font-family: 'Kanit',sans-serif;
+	font-size: 20px;
+	font-weight: 200;
+}
+.card-title{
+	color: #c0aa83;
+	font-family: 'Kanit',sans-serif;
+	font-size: 25px;
+	font-weight: 900;
+}
+
+.card-text{
+	font-family: 'Kanit',sans-serif;
+	font-size: 14px;
+}
+
+.price-tag{
+	color: #c0aa83;
+	font-family: 'Kanit',sans-serif;
+	font-size: 25px;
+	font-weight: 900;
+}
+
+.button-text{
+	font-family: 'Kanit',sans-serif;
+	font-size: 14px;
+	font-weight: 900;
+}
+
+/* .product-image{
+	width: 200px;
+	height: 200px;
+} */
+/* Crard slider */
+.card{text-align: center; border: none; border-radius: 5px;-webkit-box-shadow: 12px 14px 22px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 12px 14px 22px 2px rgba(0,0,0,0.75);
+    box-shadow: 12px 14px 22px 2px rgba(0,0,0,0.75);
+    margin-bottom: 100px;
+}
+.carousel-item img{
+        width:1200px;
+        height: 220px;;
+}
+.button1{
+	background-color: transparent;
+	color:black;
+	border: transparent;
+}
+.button2{
+	background-color: #ead6b2;
+}
+.row11{
+	font-family: 'Kanit',sans-serif;
+}
+.font{
+	font-family: 'Kanit',sans-serif;
+}

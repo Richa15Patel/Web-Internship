@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, intial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>GLAM</title>
+
+	<!-- Site Icon -->
+	<link rel="shortcut Icon" type="image/png" href="img/apple-touch-icon.png">
+
+	<!-- Font Awesome Icons -->
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+		type="text/css">
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+	<!-- Custom CSS -->
+	<link href="css/index.css" rel="stylesheet">
+<style>
+	.navbar{
+		cursor: pointer;
+	}
+</style>
+</head>
+
+<body id="page-top">
+	<!-- Navbar1 -->
+	<nav class="navbar navbar-expand-lg navbar-dark">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#"> <img src="img/diamond.webp">GLAM</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Products</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Gallery</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Contact Us</a>
+					</li>
+				</ul>
+				<form class="d-flex" role="search">
+					<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+					<button class="btn btn-outline-light" type="submit">Search</button>
+				</form>
+				<div class="mx-2">
+					<button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+					<!-- <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#signupModal">Register</button> -->
+				</div>
+			</div>
+		</div>
+	</nav>
+	<!-- Login Modal -->
+	<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="loginModalLabel">Login</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>   
+    <!-- Navbar2 -->
+	<nav class="navbar navbar-expand-lg bg-light">
+		<div class="container-fluid">
+			<!-- <a class="navbar-brand" href="#">Navbar</a> -->
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse navbar-nav1" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link">Makeup</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link">Skin</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Hair</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link">Appliances</a>
+					</li>
+					<!-- <li class="nav-item">
+						<a class="nav-link">Appliances</a>
+					</li> -->
+					<li class="nav-item">
+						<a class="nav-link">Bath & Body</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link">Natural</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link">Fragrances</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link">Mom & Baby</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link">Health & Wellness</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link">Men</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link">POP's</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+    <!-- Slider -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+		<div class="carousel-indicators">
+			<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+				aria-current="true" aria-label="Slide 1"></button>
+			<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+				aria-label="Slide 2"></button>
+			<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+				aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+				aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+				aria-label="Slide 5"></button>
+		</div>
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="https://media6.ppl-media.com/mediafiles/ecomm/misc/1658309327__-fc-web-main-banner-1298x418.jpg"
+					class="d-block w-100" alt="...">
+			</div>
+            <div class="carousel-item">
+				<img src="https://media6.ppl-media.com/mediafiles/ecomm/misc/1658305812_1298x418_web-brand-1298-x-419-2.gif?tr=f-gif"
+					class="d-block w-100">
+			</div>
+			<div class="carousel-item">
+				<img src="https://media6.ppl-media.com/mediafiles/ecomm/misc/1658298206_smudge-proof-lipstick_web_hp.gif?tr=f-gif"
+					class="d-block w-100" alt="...">
+			</div>
+			
+            <div class="carousel-item">
+				<img src="https://media6.ppl-media.com/mediafiles/ecomm/misc/1658307015_gv_webhp.gif?tr=f-gif"
+					class="d-block w-100">
+			</div>
+            <div class="carousel-item">
+				<img src="https://media6.ppl-media.com/mediafiles/ecomm/misc/1658254105_vega_web_hp-7.jpg"
+					class="d-block w-100">
+			</div>
+		</div>
+		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+			data-bs-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Previous</span>
+		</button>
+		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+			data-bs-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Next</span>
+		</button>
+	</div>
+    <div>&nbsp;</div>
+	<!-- Featured Brands -->
+    <div class="container">
+        <div class="row">
+    <div class="col col-sm-0 col-lg-1 col-md-1"></div>
+    <div class="col col-sm-12 col-lg-10 col-md-10"> <p class="letter">Featured Brands</p></div>
+    <div class="col col-sm-0 col-lg-1 col-md-1"></div>
+    </div>
+    </div>
+	<!-- Brand Images -->
+    <div class="container">
+        <div class="row">
+            <div class="col col-sm-1 col-lg-1 col-md-1"></div>
+            <div class="col col-lg-10 col-sm-12 col-md-10 ">
+                <div class="cards-wrapper">
+                    <div class="card card1">
+                      <img src="https://images-static.nykaa.com/uploads/57eb18fb-c3b3-46ff-98a2-0e9662020936.jpg?tr=w-300,cm-pad_resize" class="card-img-top" alt="...">
+                     
+                    </div>
+                    <div class="card card1">
+                      <img src="https://images-static.nykaa.com/uploads/d4fc0e4a-d278-4bfb-8bbd-024c926f13f9.gif?tr=w-300,cm-pad_resize" class="card-img-top" alt="...">
+                     
+                    </div>
+                    <div class="card card1">
+                      <img src="https://images-static.nykaa.com/uploads/b24babc3-157f-400d-8eb2-adb0abd826ae.png?tr=w-300,cm-pad_resize" class="card-img-top" alt="...">
+                     
+                    </div>
+                    <div class="card card1">
+                        <img src="https://images-static.nykaa.com/uploads/7491674b-ef6e-418f-8c34-aa46bac0d1b8.jpg?tr=w-300,cm-pad_resize" class="card-img-top" alt="...">
+                       
+                      </div>
+                    <div class="card card1">
+                        <img src="https://images-static.nykaa.com/uploads/c34cfd6c-9ee0-4cbd-8964-c7d41010dbc6.gif?tr=w-300,cm-pad_resize" class="card-img-top" alt="...">
+                       
+                      </div>
+                    <div class="card card1">
+						<a href="./product.html">
+                        <img src="https://images-static.nykaa.com/uploads/1388b99a-5ca5-4609-9640-05937c94b1e2.jpg?tr=w-300,cm-pad_resize" class="card-img-top" alt="...">
+						</a>
+                      </div>
+                  </div>
+            </div>
+            <div class="col col-sm-1 col-lg-1 col-md-1 "></div>
+        </div>
+    </div>
+	<!-- Last Image -->
+    <div class="row">
+    <div class=" col-lg-1 col-sm-12 "></div>
+    <div class="col col-sm-12 col-lg-10 col-md-12 column ">
+		<div class="cont">
+		<img src="https://media6.ppl-media.com/tr:w-1280,ar-36-5,c-at_max,pr-true/mediafiles/ecomm/misc/1656670498_get-free-gifts.png">
+		</div>
+	</div>
+    <div class=" col-lg-1 col-sm-12 ">
+        
+    </div>
+    </div>
+    
+    <!-- Bootstrap JavaScript -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>

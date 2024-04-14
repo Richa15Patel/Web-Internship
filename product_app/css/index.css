@@ -1,0 +1,131 @@
+body,html{
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+}
+body{
+	background-color:antiquewhite;
+}
+.cont img{
+	background-color:antiquewhite;
+}
+/* .btn1{
+	font-family: 'Kanit',sans-serif;
+	position: relative;
+	z-index: 3;
+	opacity: 0;
+	color:black;
+	transform: translateY(30px);
+	transform: 0.5s all;
+} */
+/* .card:hover .btn1{
+	opacity: 1;
+	transform: translateY(0px);
+
+} */
+.btn-success{
+	background-color: #c0aa83;
+	border-color: #c0aa83;
+	color: #fff;
+}
+
+.btn-success:hover{
+	background-color: #242424;
+	border-color: #242424;
+	color: #fff;
+}
+.navbar{
+	background-color:#dbc8a7;
+}
+.navbar-nav1{
+	/* position: relative; */
+	justify-content: center;
+	align-items: center;
+	/* left:143px; */
+}
+/* .carousel-item img{
+	width:1200px;
+	height: 400px;;
+} */
+.card:hover{
+	box-shadow: 20px 40px 80px -44px black;
+	transition: 0.3s ease-in-out;
+	cursor: pointer;
+}
+
+.navbar-brand img{
+	position: relative;
+    width: 27px;
+    height: 24px;
+    margin-right: 2px;
+    top: -2px;
+}
+
+.btn-light{
+	background-color: #c0aa83;
+	border-color: #c0aa83;
+	color: #fff;
+	font-family: 'Kanit',sans-serif;
+	font-size: 16px;
+	font-weight: 900;
+
+}
+
+.btn-light:hover{
+	background-color: #fff;
+	border-color: #c0aa83;
+	color: #c0aa83;
+	font-family: 'Kanit',sans-serif;
+	font-size: 16px;
+	font-weight: 900;
+
+}
+
+/* .card-title{
+	color: #c0aa83;
+	font-family: 'Kanit',sans-serif;
+	font-size: 25px;
+	font-weight: 900;
+} */
+
+.card-text{
+	font-family: 'Kanit',sans-serif;
+	font-size: 13px;
+	position: relative;
+	top:15px;
+}
+.letter{
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 5px;
+	font-size: 30px;
+}
+
+.cards-wrapper{
+	display: grid;
+	/* place-items: center; */
+	grid-template-columns:repeat(3,1fr);
+	gap: 10px;
+}
+.card1{
+	width:300px;
+	height: 300px;
+}
+.card1 img{
+	width:300px;
+	height: 300px;
+}
+.image{
+	 /* width: 100%;
+	height: 10%; */
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+/* .column .image{
+	display: grid;
+	/* place-items: center; */
+	/* grid-template-columns:repeat(3,1fr);
+	gap: 10px; */
+/* } */
