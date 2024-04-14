@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Splash&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* font-family: "Poppins", sans-serif; */
+            font-family: 'Poppins', sans-serif;
+        }
+        body{
+            background-color: #3d64e6;
+            /* font-family: 'Poppins', sans-serif; */
+        }
+        .container{
+            background-color: white;
+            padding: 3em 2.5em;
+            position: absolute;
+            transform: translate(-50%,-50%);
+            top: 50%;
+            left: 50%;
+            width: 80vh;
+            max-width: 37.56em;
+            border-radius: 10px;
+            box-shadow: rgba(0,0,0,0.3) 0px 19px 38px, rgba(0,0,0,0.3) 0px 15px 12px;
+            /* box-shadow: 0 1.25em 1.8em rgba(8,21,65,0.25); */
+        }
+        .search-wrapper{
+            display: grid;
+            grid-template-columns: 9fr 3fr;
+            gap:1.25em;
+        }
+        .search-wrapper button{
+            font-size: 1em;
+            background-color: #3d64e6;
+            color: white;
+            padding: 0.8em 0;
+            border: none;
+            border-radius: 10px;
+        }
+        .search-wrapper input{
+            font-size: 1em;
+            padding: 0 0.62em;
+            border: none;
+            border-bottom: 2px solid #3d64e6 ;
+            color: #222a43;
+        }
+        #result{
+            margin-top: 1.25em;
+        }
+        .container .flag-img{
+            display: block;
+            width:45%;
+            min-width: 7.5em;
+            margin: 1.8em auto 1.2em auto;
+        }
+        .container h2{
+            font-weight: 600;
+            color:#222a43;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .data-wrapper{
+            margin-bottom: 1em;
+            letter-spacing: 0.3px;
+        }
+        .container h4{
+            display: inline;
+            font-weight: 500;
+            color: #222a43;
+        }
+        .container span{
+            color:#5d6274
+        }
+    </style>
+ </head>
+ <body>
+   <div class="container">
+    <div class="search-wrapper">
+        <input type="text" id="country-inp" placeholder="Enter Country Name">
+        <button id="search-btn">Search</button>
+    </div>
+    <div id="result"></div>
+   </div>
+   <script>
+    let searchBtn=document.getElementById("search-btn");
+    let countryInp=document.getElementById("country-inp");
+    searchBtn.addEventListener("click", () => {
+        let countryName=countryInp.value;
+        let finalUrl=`https://restcountries.com/v3.1/name/${countryName}?fullText=true`;
+        console.log(finalUrl);
+        fetch(finalUrl)
+        .then((response) => response.json())
+        .then((data) => {
+            // console.log(data[0]);
+            // console.log(data[0].capital[0]);
+            // console.log(data[0].flags.svg);
+            // console.log(data[0].name.common);
+            // console.log(data[0].name.common);
+            // console.log(data[0].population);
+            // console.log(data[0].continents[0]);
+            // console.log(Object.keys(data[0].currencies)[0]);
+            // console.log(data[0].currencies[Object.keys(data[0].currencies)].name);
+            // console.log(Object.values(data[0].languages).toString());
+            result.innerHTML=
+            `<img src="${data[0].flags.svg}" class="flag-img">
+            <h2>${data[0].name.common}</h2>
+            <div class="wrapper">
+                <div class="data-wrapper">
+                    <h4>Capital: </h4>
+                    <span>${data[0].capital[0]}</span>
+                    </div>
+                </div>
+                <div class="wrapper">
+                <div class="data-wrapper">
+                    <h4>Continent: </h4>
+                    <span>${data[0].continents[0]}</span>
+                    </div>
+                </div>
+                <div class="wrapper">
+                <div class="data-wrapper">
+                    <h4>Currency: </h4>
+                    <span>${data[0].currencies[Object.keys(data[0].currencies)].name} - ${Object.keys(data[0].currencies)[0]}</span>
+                    </div>
+                </div>  
+                <div class="wrapper">
+                <div class="data-wrapper">
+                    <h4>Population: </h4>
+                    <span>${data[0].population}</span>
+                    </div>
+                </div>  
+                <div class="wrapper">
+                <div class="data-wrapper">
+                    <h4>Common Language(s): </h4>
+                    <span>${Object.values(data[0].languages).toString() }</span>
+                    </div>
+                </div>  
+            `;
+            
+        });
+        
+    });
+
+   </script>
+ </body>
+</html>
